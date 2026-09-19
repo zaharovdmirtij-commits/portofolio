@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff7ed;
+    color: #292524;
+}
+
+
+/* ШАПКА */
+
+header {
+    width: 100%;
+
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #292524;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ea580c;
+}
+
+
+/* ГЛАВНАЯ */
+
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 8%;
+
+    background: linear-gradient(
+        135deg,
+        #fff7ed,
+        #ffedd5
+    );
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.subtitle {
+    color: #ea580c;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+
+    color: #1c1917;
+}
+
+.description {
+    max-width: 600px;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    color: #78716c;
+
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 16px 30px;
+
+    background: #ea580c;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #c2410c;
+
+    transform: translateY(-3px);
+}
+
+
+/* МЕНЮ */
+
+.menu {
+    padding: 100px 8%;
+
+    background: white;
+
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.section-text {
+    color: #78716c;
+
+    font-size: 18px;
+
+    margin-bottom: 50px;
+}
+
+
+/* КАРТОЧКИ */
+
+.pizza-cards {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.pizza-card {
+    width: 270px;
+
+    padding: 30px 25px;
+
+    background: #fff7ed;
+
+    border-radius: 20px;
+
+    border: 1px solid #fed7aa;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.pizza-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(0, 0, 0, 0.12);
+}
+
+
+/* КАРТИНКА */
+
+.pizza-image {
+    width: 130px;
+    height: 130px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #ffedd5;
+
+    border-radius: 50%;
+
+    font-size: 70px;
+
+    margin-bottom: 20px;
+}
+
+.pizza-card h3 {
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+.pizza-card p {
+    color: #78716c;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+
+/* ЦЕНА */
+
+.price {
+    margin-top: auto;
+
+    margin-bottom: 20px;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #ea580c;
+}
+
+
+/* КНОПКА */
+
+.pizza-card button {
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    background: #ea580c;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.pizza-card button:hover {
+    background: #c2410c;
+
+    transform: translateY(-3px);
+}
+
+
+/* О НАС */
+
+.about {
+    padding: 100px 8%;
+
+    background: #fff7ed;
+
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 40px;
+
+    margin-bottom: 50px;
+}
+
+.advantages {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.advantage {
+    width: 280px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    border: 1px solid #fed7aa;
+}
+
+.advantage-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.advantage h3 {
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.advantage p {
+    color: #78716c;
+
+    line-height: 1.5;
+}
+
+
+/* КОНТАКТЫ */
+
+.contacts {
+    padding: 100px 20px;
+
+    background: white;
+
+    text-align: center;
+}
+
+.contacts h2 {
+    font-size: 40px;
+
+    margin-bottom: 20px;
+}
+
+.contacts p {
+    color: #78716c;
+
+    font-size: 18px;
+
+    margin-bottom: 35px;
+}
+
+.contact-button {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background: #ea580c;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background: #c2410c;
+
+    transform: translateY(-3px);
+}
+
+
+/* ПОДВАЛ */
+
+footer {
+    padding: 25px;
+
+    background: #1c1917;
+
+    color: #a8a29e;
+
+    text-align: center;
+}
+
+
+/* ТЕЛЕФОН */
+
+@media (max-width: 750px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 70vh;
+
+        padding: 60px 20px;
+
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+
+    .menu h2,
+    .about h2,
+    .contacts h2 {
+        font-size: 32px;
+    }
+
+}
